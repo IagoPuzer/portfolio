@@ -6,7 +6,7 @@
 
 :root{
     font-size:62.5%;
-    --hue: 90;
+    --hue: 30;
     --primary-color: hsl(var(--hue), 100%, 26%);
     --headline: hsl(210, 11%, 15%);
     --paragraph: hsl(210, 9%, 31%); 
@@ -419,6 +419,7 @@ body.menu-expanded button path{
     margin-top: 2.4rem;
     margin-bottom: 6rem;
     font-size:1.8rem;
+    color: var(--paragraph);
 }
 
 #about .wrapper .about-content .btn-about {
@@ -432,7 +433,8 @@ body.menu-expanded button path{
 
 #about .wrapper img {
     border-radius: 4rem;
-    height: 50rem;
+    height: 45rem;
+    width:100%;
 }
 
 /*======== CONTACT =============== */
@@ -447,19 +449,38 @@ body.menu-expanded button path{
     margin-bottom:3.2rem;
 }
 
+#contact .wrapper .contact-title h4{
+    width:15rem;
+    height:2.1rem;
+    font-size: 1.8rem;
+    line-height:150%;
+    letter-spacing:0.08rem;
+    margin-bottom:1.6rem;
+    color: var(--primary-color);
+}
+
 #contact .wrapper .contact-title p {
     line-height: 150%;
     text-align: left;
     margin-top: 2.4rem;
-    margin-bottom: 6rem;
     font-size:1.8rem;
+    color: var(--paragraph);
 }
+
+#contact .wrapper .contact-title h2,
+#contact .wrapper .form-contact h2{
+    font-size: 3rem;
+    color: var(--headline);
+    line-height:3.9rem;
+
+}
+
 
 #contact .wrapper .contact-content ul{
     display:flex;
     flex-direction:column;
     gap: 1.6;
-    margin-bottom:3.2rem;
+    margin-bottom:3rem;
 }
 #contact .wrapper .contact-content ul li {
     display:flex;
@@ -475,7 +496,7 @@ body.menu-expanded button path{
     border-radius: 4.0rem;
     border: none;
     padding:1.6rem 3.2rem;
-    margin-bottom:6rem;
+    margin-bottom:2rem;
     width: fit-content;
     color: white;
     display: flex;
@@ -490,3 +511,126 @@ body.menu-expanded button path{
 #contact .wrapper .contact-content .btn-contact:hover{
     background: var(--brand-dark);
 }
+
+#contact .wrapper .form-contact form .input{
+    display: flex;
+    flex-direction:column;
+}
+
+#contact .wrapper .form-contact form label {
+    width:30rem;
+    height:2.1rem;
+    font-size: 1.8rem;
+    line-height:150%;
+    letter-spacing:0.08rem;
+    margin-top:1rem;
+    margin-bottom:1.3rem;
+    color: var(--paragraph);
+}
+
+#contact .wrapper .form-contact form input {
+    width: 26rem;
+    height:3rem;
+    border-radius: 1rem;
+    color: var(--paragraph);
+    font-size:1.5rem;
+    font-family: 'DM Sans';
+    border:0.15rem solid var(--primary-color);
+    
+}
+
+#contact .wrapper .form-contact form textarea {
+    width: 40rem;
+    height:10rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--paragraph);
+    font-size:1.5rem;
+    font-family: 'DM Sans';
+    border:0.15rem solid var(--primary-color);
+}
+
+#contact .wrapper .form-contact form input:focus,
+#contact .wrapper .form-contact form textarea:focus{
+    box-shadow:0 0 0 0;
+    outline:0;
+}
+
+#contact .wrapper .form-contact form button {
+    background: var(--primary-color);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 4.0rem;
+    border: none;
+    padding:1.6rem 3.2rem;
+    width: fit-content;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition:background 200ms;
+}
+
+#contact .wrapper .form-contact form button:hover{
+    background: var(--brand-dark);
+}
+
+/*======== ERRO NOS INPUT =============== */
+
+.input span.error.active {
+    color: red;
+    padding: 0.4em;
+}
+
+/*======== FOOTER =============== */
+
+#footer{
+    background: var(--primary-color);
+    height:28.5rem;
+    padding-top:6rem;
+    text-align: left;
+    color: white;
+    padding-block: 6rem;
+    margin-top: 15rem;
+}
+
+#footer .wrapper .logo{
+    display: inline-block;
+    margin-bottom:0.5rem;
+}
+
+#footer .wrapper .logo svg{
+    width: 20rem;
+    height:10rem;
+}
+
+#footer .logo path{
+    fill: white;
+}
+
+#footer .wrapper .footer-social-links{
+    display: flex;
+    gap:3.2rem;
+    align-items: center;
+    justify-content:flex-start;
+    font-size:2.4rem;
+    line-height:3.1rem;
+    font-weight: 700;
+    list-style: none;
+    margin-top:1rem;
+    
+}
+#footer .wrapper .footer-social-links a {
+    color:white;
+}
+
+#footer .wrapper p{
+    margin-top:3.2rem;
+}
+
+
