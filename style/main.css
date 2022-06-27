@@ -6,7 +6,7 @@
 
 :root{
     font-size:62.5%;
-    --hue: 30;
+    --hue: 70;
     --primary-color: hsl(var(--hue), 100%, 26%);
     --headline: hsl(210, 11%, 15%);
     --paragraph: hsl(210, 9%, 31%); 
@@ -47,6 +47,12 @@ img{
     padding-inline: 2.4rem;
 }
 
+/* custom colors */
+#services .card circle {
+    fill: var(--brand-light);
+  }
+  
+  
 /*============NAVIGATION===============*/
 
 nav {
@@ -275,7 +281,7 @@ body.menu-expanded button path{
 /*======== STACKS =============== */
 
 #stacks .wrapper {
-    padding-block: 10rem;
+    padding-top: 10rem;
 }
 
 #stacks .wrapper .stacks-titles {
@@ -375,18 +381,46 @@ body.menu-expanded button path{
 
 #projects .wrapper .projects-cards .card img {
     width: 100%;
-    height: 16rem;
+    height: 20rem;
+    transition:200ms;
 
 }
 
+#projects .wrapper .projects-cards .card img:hover{
+    height:22rem;
+
+}
+
+#projects .wrapper .projects-cards .card .card-body h3{
+    font-size:1.8rem;
+    font-weight: 700;
+    line-height:3.9rem;
+    color: var(--headline);
+
+}
 
 #projects .wrapper .projects-cards .card .card-body p {
     font-size: 1.6rem;
     font-weight:400;
     line-height: 150%;
-    color: var(--paragraph)
-
+    color: var(--paragraph);
 }
+
+#projects .wrapper .projects-cards .card .card-body .card-text{
+    margin-bottom:1rem;
+}
+
+#projects .wrapper .projects-cards .card .card-body .btn-card {
+    text-decoration: none;
+    color: var(--headline);
+    font-size: 2rem;
+}
+
+#projects .wrapper .projects-cards .card .card-body .btn-card:hover{
+    color: var(--primary-color);
+}
+
+
 
 /*======== ABOUT =============== */
 
