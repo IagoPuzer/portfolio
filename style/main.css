@@ -319,18 +319,13 @@ body.menu-expanded button path{
     background:white;
     border:1px solid var(--brand-light);
     border-radius:0.6rem;
+    display: flex;
+    flex-direction:column;
 }
 
-#stacks .wrapper .stacks-cards .card h3{
-    margin-block: 1.6rem;
-}
-
-#stacks .wrapper .stacks-cards .card p {
-    font-size: 1.6rem;
-    font-weight:400;
-    line-height: 150%;
-    color: var(--paragraph)
-
+#stacks .wrapper .stacks-cards .card img {
+    width: 10rem;
+    margin-inline: auto;
 }
 
 
@@ -667,4 +662,14 @@ body.menu-expanded button path{
     margin-top:3.2rem;
 }
 
+#backTop {
+    display: none; 
+    position: fixed;
+    bottom: 2rem; 
+    right:3rem; 
+    z-index: 99;
+    cursor: pointer;
+    padding: 1.5rem;
+  }
+  
 

@@ -1,3 +1,4 @@
+//========MENU EXPANDED========
 function openMenu(){
     document.body.classList.add('menu-expanded')
 }
@@ -7,7 +8,7 @@ function closeMenu(){
 }
 
 
-//validation form
+//=======VALIDATION FORM========
 const fields = document.querySelectorAll("[required]")
 
 function ValidateField(field) {
@@ -95,3 +96,24 @@ document.querySelector("form").addEventListener("submit", event => {
     event.preventDefault()
 })
 
+//=========BACK TO TOP BUTTON===========
+
+backToTop = document.querySelector ('#backTop')
+
+window.onscroll = function(){
+    scrollFunction()
+}
+
+function scrollFunction(){
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        backToTop.style.display = "block"
+    }else {
+        backToTop.style.display = "none"
+    }
+}
+
+function topFunction (){// funcionalidade do botão para rolar até o topo
+    
+    document.body.scrollTop = 0; // para navegador Safari
+    document.documentElement.scrollTop = 0; // para o Chrome, Firefox, Internet Explores e Opera
+} 
