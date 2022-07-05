@@ -80,7 +80,7 @@ nav button {
 }
 
 nav .btn-open{
-    margin-left:15rem;
+    margin-left:8rem;
 }
 
 
@@ -188,18 +188,7 @@ body.menu-expanded button path{
 #home {
     padding-block: 0;
     padding-top: calc(4.1rem + var(--nav-height));
-}
-
-#home::before {
-    content: "";
-    width: 100%;
-    height: calc(90% + var(--nav-height));
     background: var(--brand-light);
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
 }
 
 #home .header-title .title {
@@ -570,7 +559,7 @@ body.menu-expanded button path{
 }
 
 #contact .wrapper .form-contact form textarea {
-    width: 40rem;
+    width: 30rem;
     height:10rem;
     border-radius: 1rem;
     margin-top: 2rem;
@@ -626,7 +615,7 @@ body.menu-expanded button path{
     text-align: left;
     color: white;
     padding-block: 6rem;
-    margin-top: 15rem;
+    margin-top: 20rem;
 }
 
 #footer .wrapper .logo{
@@ -665,12 +654,9 @@ body.menu-expanded button path{
 
 #backTop {
     display: none; 
+    visibility:hidden;
     position: fixed;
-    bottom: 2rem; 
-    right:3rem; 
-    z-index: 99;
-    cursor: pointer;
-    padding: 1.5rem;
+   
   }
   
 

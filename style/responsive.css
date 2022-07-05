@@ -111,12 +111,22 @@
 
       /*======== HOME =============== */
     
-      #home::before{
-        height: calc(80% - var(--nav-height));
+      
+      #home::before {
+        content: "";
+        width: 100%;
+        height: calc(70% + var(--nav-height));
+        background: var(--brand-light);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 
     #home {
         padding-top: var(--nav-height);
+        background: none;
     }
 
     #home .wrapper{
@@ -287,4 +297,15 @@
         justify-self:flex-end;
     }
 
+    /*======BACK TO TOP==========*/
+
+    #backTop {
+    display: none; 
+    position: fixed;
+    bottom: 2rem; 
+    right:3rem; 
+    z-index: 99;
+    cursor: pointer;
+    padding: 1.5rem;
+  }
 }
