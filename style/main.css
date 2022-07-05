@@ -653,10 +653,9 @@ body.menu-expanded button path{
 }
 
 #backTop {
-    display: none; 
-    visibility:hidden;
+    display:none;
     position: fixed;
-   
+    
   }
   
 

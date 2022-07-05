@@ -300,7 +300,6 @@
     /*======BACK TO TOP==========*/
 
     #backTop {
-    display: none; 
     position: fixed;
     bottom: 2rem; 
     right:3rem; 
