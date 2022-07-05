@@ -237,7 +237,13 @@
     
       #about .wrapper .about-content p {
         margin-bottom: 0;   
-      } 
+      }
+      
+      #about .wrapper img {
+       object-fit: cover;
+       width:50rem;
+       height:54rem;
+      }
 
     /*======== CONTACT =============== */
     #contact .wrapper {
