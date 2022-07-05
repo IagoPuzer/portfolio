@@ -243,6 +243,7 @@
     #contact .wrapper {
         grid-template-columns:1fr 57.5rem;
         grid-template-areas: 'A B';
+       margin-bottom: 0
     }
   
     #contact .wrapper .contact-title h2{
@@ -250,11 +251,16 @@
         font-size: 4rem;
     }
 
+    #contact .wrapper .form-contact {
+        margin-left: 6rem
+    }
+
     
     /*======== FOOTER =============== */
 
-       #footer{
+    #footer{
         padding-block: 8rem;
+        margin-top:0
     }
 
     #footer .wrapper {
@@ -274,7 +280,5 @@
         align-self: center;
         justify-self:flex-end;
     }
-
-
 
 }
